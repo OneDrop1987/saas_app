@@ -17,7 +17,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-       <%= link_to 'SaaS Application', root_path, class: 'navbar-brand' %>
+        <%= link_to root_path, class: 'navbar-brand' do %>
+          <i class="fa fa-bug navbar-brand">Floptopulous</i>
+        <% end %>
       </div>
       
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -28,7 +30,10 @@
      <!--       navbar collapse -->
     </div>
   </nav>
-<%= yield %>
+  
+  <div class="container">
+    <%= yield %>
+  </div>
 
 </body>
 </html>
